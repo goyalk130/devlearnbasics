@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .parent{
+            border: 3px solid red;
+            
+            position: absolute;
+        }
+      .rel {
+        width: 10rem;
+        height: 10rem;
+        background: greenyellow;
+        margin: 1rem;
+        position: absolute;
+        border: 1px solid black;
+        
+        
+      }
+      .rel:nth-child(2) {
+        scale: 0.7;
+        bottom: 100px;
+        right: 150px;
+      }
+      .rel:nth-child(3) {
+        scale: 0.6;
+        bottom: 50px;
+        left: 25px;
+      }
+      .rel:nth-child(4) {
+        scale: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="rel"></div>
+      <div class="rel"></div>
+      <div class="rel"></div>
+      <div class="rel"></div>
+    </div>
+  </body>
+</html>
